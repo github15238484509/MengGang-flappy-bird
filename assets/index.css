@@ -13,6 +13,7 @@
     background-image: url(../images/birds.png);
     width: 30px;
     height: 30px;
+    transition: top 0.3 linear;
 }
 
 .start {
@@ -25,6 +26,8 @@
     text-align: center;
     font-weight: bolder;
     line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3 linear;
 }
 
 .start.start-white {
@@ -44,6 +47,7 @@
     font-weight: bolder;
     font-size: 24px;
     color: #fff;
+    display: none;
 }
 
 .mark {
@@ -53,9 +57,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    display: none;
 }
 
 .end {
+    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
